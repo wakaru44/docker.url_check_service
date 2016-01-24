@@ -1,8 +1,12 @@
 help:
-	@echo "build-local - Build container for local development"
+	@echo "install      - Clone the repo of the app for docker to build"
+	@echo "build-local  - Build container for local development"
 	@echo "build-deploy - Build container in production mode"
-	@echo "run-local - Run container for local development"
-	@echo "run-deploy - Run container for in production mode"
+	@echo "run-local    - Run container for local development"
+	@echo "run-deploy   - Run container for in production mode"
+
+install:
+	cd app; git clone https://github.com/wakaru44/url_check_service.git app
 
 build-base:
 	cd ops/base/; docker build -t="wakaru44/python-base" .
