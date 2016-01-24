@@ -1,12 +1,19 @@
-# docker.flask_service_boilerplate
+# docker.url_check_service
 
-A bare bones python Docker setup to support local and production development from a single ops base. A super simple Flask app is contained in the `app/` directory for demo purposes, but this can easily be switched for any WSGI compatible application.
+The docker tooling and files to run the url_check_service app in dev and production mode
 
+## Install
 
-## Adding your app
+just run
 
-Just put your flask app under the `app` folder. make sure your starting point is `app/app.py` and u r good 2 go
+    make install
 
+and it will clone the latest version of the service.
+Then edit the links that you want to check in the files config on
+
+    ./app/links.md
+
+And run.
 
 ## Steps to run
 
